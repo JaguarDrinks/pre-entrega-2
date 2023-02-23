@@ -1,0 +1,322 @@
+.page-button {
+  align-self: center;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: #ff051b;
+  padding: 0.5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Estilos Generales */
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #ff051b;
+  color: black;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Estilos para Navbar */
+
+.navbar {
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  background-color: black;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: #ff051b;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-banner {
+  margin: 0rem 1rem 0rem 0rem;
+}
+
+.navbar-toggler {
+  color: #ff051b;
+}
+
+/* Estilos Responsive  */
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-banner {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .imagen-welcome {
+    max-width: 600px;
+  }
+}
+
+/* Estilos para [INDEX] */
+
+.welcome {
+  min-height: 450px;
+  text-align: center;
+  color: black;
+}
+
+.welcome-central {
+  padding: 3rem;
+}
+
+.follow-us {
+  padding: 40px;
+}
+
+.social img {
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+.follow-us-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.social {
+  position: relative;
+}
+
+.follow-us .social {
+  padding: 1rem;
+  margin-bottom: 25px;
+  border: solid black 3px;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para [MUSIC] */
+
+.musica-disponible {
+  padding: 40px;
+}
+
+.musica-disponible img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.musica-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.album {
+  position: relative;
+}
+
+.album:hover img {
+  opacity: 0.2;
+}
+
+.album:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-album {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 90px;
+  margin: 10px;
+}
+
+/* ESTILOS PARA [SHOP] */
+
+.productos-disponibles {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 6rem;
+}
+
+.productos {
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: white;
+}
+
+/* ESTILOS PARA [LABEL] */
+
+.body-label {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.titulo-label {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.texto-label-es {
+  text-align: justify;
+  border-style: solid;
+  max-width: 50%;
+  margin: 1rem;
+}
+
+.texto-label-en {
+  text-align: justify;
+  border-style: solid;
+  max-width: 50%;
+  margin: 1rem;
+}
+
+.parrafo1 {
+  margin: 2rem;
+}
+
+.parrafo2 {
+  margin: 2rem;
+}
+
+.location {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.findus-mapa {
+  display: flex;
+  text-align: center;
+  border-style: solid;
+  border-radius: 1rem;
+  max-width: 50%;
+  padding: 0.8rem;
+  margin: 1rem;
+}
+
+/* ESTILOS PARA [CONTACT] */
+
+.titulo-form {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.formulario {
+  display: inline-block;
+  align-items: center;
+}
+
+fieldset {
+  border: 3px solid black;
+  max-width: 30rem;
+}
+
+.input-form {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.input-form--message {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  justify-content: center;
+  margin: 1rem;
+  vertical-align: top;
+}
+
+textarea {
+  text-align: center;
+  width: 30rem;
+  height: 10rem;
+  margin: 1rem 3rem 1rem 3rem;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem;
+}
+
+.form-button {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: black;
+  text-align: center;
+}
+
+.footer-copyright {
+  background-color: rgb(70, 46, 46);
+  padding: 0.5rem;
+  font-style: italic;
+}
+
+.footer-creator {
+  font-size: 14px;
+  color: #ff051b;
+  padding: 0.5rem;
+}
