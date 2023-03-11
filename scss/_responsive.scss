@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-banner {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .imagen-welcome {
+    max-width: 600px;
+  }
+}
