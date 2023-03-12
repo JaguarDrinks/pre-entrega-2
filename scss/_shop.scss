@@ -1,18 +1,32 @@
 .productos-disponibles {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 6rem;
+  padding: 40px;
+  img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+  }
 }
 
 .productos {
-  display: flex;
-  flex: 0 1 300px;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 2rem;
-  background-color: white;
+  border-radius: 30px;
+  display: block;
+  position: relative;
+  background-color: $main-color;
+  border: solid black;
+  padding: 20px;
+  h3 {
+    margin: 1rem;
+    font-family: $font-two;
+  }
+  .btn {
+    font-family: $font-two;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+.shop-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
 }

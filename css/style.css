@@ -1,3 +1,5 @@
+/* Colores */
+/* Fuentes */
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +29,11 @@ section {
   justify-content: center;
 }
 
+.seccion-oscura {
+  border-top: solid black 4px;
+  background-color: #92071e;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -36,7 +43,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -80,30 +87,17 @@ h3 {
   text-align: center;
   color: black;
 }
-
-.welcome-central {
+.welcome .welcome-central {
   padding: 3rem;
 }
 
 .follow-us {
   padding: 40px;
 }
-
-.social img {
-  padding: 5px;
-  text-align: center;
-  justify-content: center;
-}
-
-.follow-us-contenedor {
+.follow-us .follow-us-contenedor {
   padding-top: 60px;
   margin-bottom: 40px;
 }
-
-.social {
-  position: relative;
-}
-
 .follow-us .social {
   padding: 1rem;
   margin-bottom: 25px;
@@ -111,12 +105,18 @@ h3 {
   border-radius: 1rem;
   align-items: center;
   justify-content: center;
+  background-color: #ff051b;
+  position: relative;
+}
+.follow-us img {
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
 }
 
 .musica-disponible {
   padding: 40px;
 }
-
 .musica-disponible img {
   height: 100%;
   width: 100%;
@@ -126,7 +126,7 @@ h3 {
   transition: all 0.2s ease;
 }
 
-.musica-contenedor {
+.music-contenedor {
   padding-top: 60px;
   margin-bottom: 40px;
 }
@@ -140,142 +140,117 @@ h3 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-.album {
-  position: relative;
-}
-
-.album:hover img {
-  opacity: 0.2;
-}
-
-.album:hover .overlay {
-  opacity: 1;
-}
-
 .overlay .iconos-album {
   display: flex;
 }
-
 .overlay i {
   color: black;
   font-size: 90px;
   margin: 10px;
 }
 
+.album {
+  position: relative;
+}
+.album:hover img {
+  opacity: 0.5;
+}
+.album:hover .overlay {
+  opacity: 1;
+}
+
 .productos-disponibles {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 6rem;
+  padding: 40px;
+}
+.productos-disponibles img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
 }
 
 .productos {
-  display: flex;
-  flex: 0 1 300px;
-  flex-direction: column;
-  border: 2px solid black;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 2rem;
-  background-color: white;
+  border-radius: 30px;
+  display: block;
+  position: relative;
+  background-color: #ff051b;
+  border: solid black;
+  padding: 20px;
+}
+.productos h3 {
+  margin: 1rem;
+  font-family: "Roboto", serif;
+}
+.productos .btn {
+  font-family: "Roboto", serif;
+  background-color: black;
+  border-color: black;
 }
 
-.body-label {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.shop-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
-.titulo-label {
+.info-label {
+  padding: 40px;
+}
+
+.label-contenedor {
+  padding-top: 60px;
+}
+.label-contenedor h3 {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
-.texto-label-es {
-  text-align: justify;
-  border-style: solid;
-  max-width: 50%;
-  margin: 1rem;
-}
-
-.texto-label-en {
-  text-align: justify;
-  border-style: solid;
-  max-width: 50%;
-  margin: 1rem;
-}
-
-.parrafo1 {
+.bloque-texto {
+  border: solid black 4px;
   margin: 2rem;
+  justify-content: center;
 }
-
-.parrafo2 {
-  margin: 2rem;
-}
-
-.location {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.findus-mapa {
-  display: flex;
+.bloque-texto .parrafo {
+  margin: 1.5rem;
   text-align: center;
-  border-style: solid;
-  border-radius: 1rem;
-  max-width: 50%;
-  padding: 0.8rem;
-  margin: 1rem;
+  font-family: "Roboto", serif;
 }
 
-.titulo-form {
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 1rem;
+.contact-label {
+  padding: 40px;
 }
 
-.formulario {
-  display: inline-block;
+.form-contenedor {
+  margin: 2rem;
+}
+.form-contenedor h3 {
+  margin: 2rem;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.form-contenedor .btn {
+  font-family: "Roboto", serif;
+  background-color: black;
+  border-color: black;
+  margin: 1.5rem;
+}
+
+.bloque-form {
+  justify-content: center;
   align-items: center;
+  border: solid black 4px;
+  padding: 8px 20px 8px 20px;
 }
 
-fieldset {
-  border: 3px solid black;
-  max-width: 30rem;
+.mapa {
+  padding: 3rem;
 }
-
-.input-form {
-  font-family: "Playfair Display", serif;
-  font-size: 17px;
-  justify-content: center;
-  margin: 1rem;
-}
-
-.input-form--message {
-  font-family: "Playfair Display", serif;
-  font-size: 17px;
-  justify-content: center;
-  margin: 1rem;
-  vertical-align: top;
-}
-
-textarea {
+.mapa h2 {
   text-align: center;
-  width: 30rem;
-  height: 10rem;
-  margin: 1rem 3rem 1rem 3rem;
+  font-family: "Playfair Display", serif;
 }
-
-.formulario {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 5rem;
-}
-
-.form-button {
-  text-align: center;
-  margin: 0.5rem;
+.mapa .findus-mapa {
+  border: solid black 4px;
+  margin: 20px;
 }
 
 .footer {

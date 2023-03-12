@@ -1,46 +1,22 @@
-.body-label {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.info-label {
+  padding: 40px;
 }
 
-.titulo-label {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+.label-contenedor {
+  padding-top: 60px;
+  h3 {
+    text-align: center;
+    font-family: $font-one;
+  }
 }
 
-.texto-label-es {
-  text-align: justify;
-  border-style: solid;
-  max-width: 50%;
-  margin: 1rem;
-}
-
-.texto-label-en {
-  text-align: justify;
-  border-style: solid;
-  max-width: 50%;
-  margin: 1rem;
-}
-
-.parrafo1 {
+.bloque-texto {
+  border: solid black 4px;
   margin: 2rem;
-}
-
-.parrafo2 {
-  margin: 2rem;
-}
-
-.location {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.findus-mapa {
-  display: flex;
-  text-align: center;
-  border-style: solid;
-  border-radius: 1rem;
-  max-width: 50%;
-  padding: 0.8rem;
-  margin: 1rem;
+  justify-content: center;
+  .parrafo {
+    margin: 1.5rem;
+    text-align: center;
+    font-family: $font-two;
+  }
 }

@@ -1,17 +1,16 @@
 .musica-disponible {
   padding: 40px;
+  img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    display: block;
+    transition: all 0.2s ease;
+  }
 }
 
-.musica-disponible img {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  border-radius: 30px;
-  display: block;
-  transition: all 0.2s ease;
-}
-
-.musica-contenedor {
+.music-contenedor {
   padding-top: 60px;
   margin-bottom: 40px;
 }
@@ -24,26 +23,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  .iconos-album {
+    display: flex;
+  }
+  i {
+    color: black;
+    font-size: 90px;
+    margin: 10px;
+  }
 }
 
 .album {
   position: relative;
-}
-
-.album:hover img {
-  opacity: 0.2;
-}
-
-.album:hover .overlay {
-  opacity: 1;
-}
-
-.overlay .iconos-album {
-  display: flex;
-}
-
-.overlay i {
-  color: black;
-  font-size: 90px;
-  margin: 10px;
+  &:hover img {
+    opacity: 0.5;
+  }
+  &:hover .overlay {
+    opacity: 1;
+  }
 }

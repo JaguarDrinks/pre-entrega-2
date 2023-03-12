@@ -90,40 +90,84 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="formulario">
-          <form>
-            <div class="titulo-form">
-              <legend>CONTACT US</legend>
+      <!-- Seccion Contact -->
+      <section class="contact-label text-center align-items-stretch">
+        <h1>Contact</h1>
+        <!-- Formulario -->
+        <div
+          class="form-contenedor d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="bloque-form">
+            <h3>Want to send us your sounds?</h3>
+            <!-- Input 1 -->
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Complete name"
+                aria-label="Complete name"
+                aria-describedby="basic-addon1"
+              />
             </div>
-            <fieldset>
-              <div class="input-form">
-                <label>Name:</label>
-                <input type="box" />
+            <!-- Input 2 -->
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="E-mail adress"
+                aria-label="E-mail adress"
+                aria-describedby="basic-addon2"
+              />
+            </div>
+            <!-- Input 3 -->
+            <div class="mb-3">
+              <label for="basic-url" class="form-label"
+                >Link to your music:</label
+              >
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon3"
+                  >https://www.</span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="basic-url"
+                  aria-describedby="basic-addon3"
+                />
               </div>
-              <div class="input-form">
-                <label>Last name:</label>
-                <input type="box" />
+              <div class="form-text">
+                Only links to online music, no downloads please :)
               </div>
-              <div class="input-form">
-                <label>I want to send my music to the label</label>
-                <input type="checkbox" />
-              </div>
-              <div class="input-form--message">
-                <label>Message:</label>
-                <textarea></textarea>
-              </div>
-              <div class="form-button">
-                <input type="submit" />
-              </div>
-              <div class="form-button">
-                <input type="reset" />
-              </div>
-            </fieldset>
-          </form>
+            </div>
+            <!-- Input 4 -->
+            <div class="input-group">
+              <span class="input-group-text">Message:</span>
+              <textarea class="form-control" aria-label="Message:"></textarea>
+            </div>
+            <!-- Boton -->
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
         </div>
-      </div>
+      </section>
+      <!-- Seccion Mapa -->
+      <section class="col seccion-oscura">
+        <div class="mapa">
+          <h2>Find us!</h2>
+          <section class="findus-mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8466972224933!2d-58.44647138519512!3d-34.6080378652328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca124b20b935%3A0x2274a0e0e54ee53a!2sAv.%20D%C3%ADaz%20V%C3%A9lez%205532%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1675030768336!5m2!1ses!2sar"
+              width="400"
+              height="325"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+        </div>
+      </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-copyright">
         &copy; Copyright 2023 Sufrimiento Records

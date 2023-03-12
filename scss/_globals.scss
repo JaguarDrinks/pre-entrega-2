@@ -15,9 +15,9 @@ header {
 }
 
 body {
-  font-family: "Playfair Display", serif;
-  background-color: #ff051b;
-  color: black;
+  font-family: $font-one;
+  background-color: $main-color;
+  color: $secondary-color;
 }
 
 section {
@@ -27,14 +27,19 @@ section {
   justify-content: center;
 }
 
+.seccion-oscura {
+  border-top: solid black 4px;
+  background-color: $tertiary-color;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: $title-size;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: $subtitle-size;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: $third-size;
 }
