@@ -18,7 +18,7 @@ header {
 
 body {
   font-family: "Playfair Display", serif;
-  background-color: #ff051b;
+  background-image: radial-gradient(#ff051b 70%, black);
   color: black;
 }
 
@@ -31,7 +31,7 @@ section {
 
 .seccion-oscura {
   border-top: solid black 4px;
-  background-color: #92071e;
+  background-image: linear-gradient(#ff051b 1%, #92071e 50%, black);
 }
 
 h1 {
