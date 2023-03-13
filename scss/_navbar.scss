@@ -11,6 +11,11 @@
 .nav-link {
   color: #ff051b;
   font-family: "Roboto", sans-serif;
+  &:hover,
+  &:focus {
+    opacity: 0.65;
+    color: white;
+  }
 }
 
 .navbar-banner {

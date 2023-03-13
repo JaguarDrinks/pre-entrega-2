@@ -1,3 +1,5 @@
+/* Seccion Welcome */
+
 .welcome {
   min-height: 450px;
   text-align: center;
@@ -7,25 +9,51 @@
   }
 }
 
+/* Seccion Follow Us */
+
 .follow-us {
   padding: 40px;
   .follow-us-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
+    padding-top: 20px;
+    margin-bottom: 30px;
   }
-  .social {
-    padding: 1rem;
-    margin-bottom: 25px;
+  .social-button {
+    padding: 0.2rem;
+    margin-bottom: 20px;
     border: solid black 3px;
     border-radius: 1rem;
     align-items: center;
     justify-content: center;
     background-color: $main-color;
     position: relative;
+    overflow: hidden;
+    transition: transform 500ms ease;
+    &:hover,
+    &:focus-within {
+      transform: scale(1.05);
+    }
   }
   img {
     padding: 5px;
     text-align: center;
     justify-content: center;
+  }
+}
+
+.social-title {
+  color: $main-color;
+  font-family: $font-two;
+  background-color: $secondary-color;
+  border: solid black;
+  border-top-left-radius: 100rem;
+  border-top-right-radius: 100rem;
+  transform: translateY(150%);
+  transition: transform 500ms ease;
+}
+
+.social:hover {
+  h3 {
+    transform: translateY(30%);
+    transition-delay: 10ms;
   }
 }

@@ -73,6 +73,10 @@ h3 {
   color: #ff051b;
   font-family: "Roboto", sans-serif;
 }
+.nav-link:hover, .nav-link:focus {
+  opacity: 0.65;
+  color: white;
+}
 
 .navbar-banner {
   margin: 0rem 1rem 0rem 0rem;
@@ -82,6 +86,7 @@ h3 {
   color: #ff051b;
 }
 
+/* Seccion Welcome */
 .welcome {
   min-height: 450px;
   text-align: center;
@@ -91,27 +96,49 @@ h3 {
   padding: 3rem;
 }
 
+/* Seccion Follow Us */
 .follow-us {
   padding: 40px;
 }
 .follow-us .follow-us-contenedor {
-  padding-top: 60px;
-  margin-bottom: 40px;
+  padding-top: 20px;
+  margin-bottom: 30px;
 }
-.follow-us .social {
-  padding: 1rem;
-  margin-bottom: 25px;
+.follow-us .social-button {
+  padding: 0.2rem;
+  margin-bottom: 20px;
   border: solid black 3px;
   border-radius: 1rem;
   align-items: center;
   justify-content: center;
   background-color: #ff051b;
   position: relative;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.follow-us .social-button:hover, .follow-us .social-button:focus-within {
+  transform: scale(1.05);
 }
 .follow-us img {
   padding: 5px;
   text-align: center;
   justify-content: center;
+}
+
+.social-title {
+  color: #ff051b;
+  font-family: "Roboto", serif;
+  background-color: black;
+  border: solid black;
+  border-top-left-radius: 100rem;
+  border-top-right-radius: 100rem;
+  transform: translateY(150%);
+  transition: transform 500ms ease;
+}
+
+.social:hover h3 {
+  transform: translateY(30%);
+  transition-delay: 10ms;
 }
 
 .musica-disponible {
