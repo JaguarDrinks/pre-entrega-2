@@ -9,3 +9,11 @@ $font-two: "Roboto", serif;
 $title-size: 3rem;
 $subtitle-size: 2rem;
 $third-size: 1.3rem;
+
+/* Gradients */
+$main-gradient: radial-gradient($main-color 70%, $secondary-color);
+$secondary-gradient: linear-gradient(
+  $main-color 1%,
+  $tertiary-color 50%,
+  $secondary-color
+);

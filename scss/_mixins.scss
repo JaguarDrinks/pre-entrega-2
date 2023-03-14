@@ -1,0 +1,6 @@
+@mixin background-colors($background) {
+  background-image: $background;
+  font-family: $font-one;
+  color: $secondary-color;
+  border-top: solid black 4px;
+}

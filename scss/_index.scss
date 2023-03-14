@@ -6,6 +6,20 @@
   color: black;
   .welcome-central {
     padding: 3rem;
+    img {
+      animation-duration: 3s;
+      animation-name: movimiento;
+      animation-iteration-count: 1;
+    }
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -31,6 +45,7 @@
     &:hover,
     &:focus-within {
       transform: scale(1.05);
+      background-image: $main-gradient;
     }
   }
   img {
@@ -52,7 +67,7 @@
 }
 
 .social:hover {
-  h3 {
+  .social-title {
     transform: translateY(30%);
     transition-delay: 10ms;
   }

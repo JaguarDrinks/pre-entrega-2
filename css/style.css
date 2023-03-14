@@ -1,5 +1,6 @@
 /* Colores */
 /* Fuentes */
+/* Gradients */
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +18,10 @@ header {
 }
 
 body {
-  font-family: "Playfair Display", serif;
   background-image: radial-gradient(#ff051b 70%, black);
+  font-family: "Playfair Display", serif;
   color: black;
+  border-top: solid black 4px;
 }
 
 section {
@@ -30,8 +32,10 @@ section {
 }
 
 .seccion-oscura {
-  border-top: solid black 4px;
   background-image: linear-gradient(#ff051b 1%, #92071e 50%, black);
+  font-family: "Playfair Display", serif;
+  color: black;
+  border-top: solid black 4px;
 }
 
 h1 {
@@ -95,7 +99,20 @@ h3 {
 .welcome .welcome-central {
   padding: 3rem;
 }
+.welcome .welcome-central img {
+  animation-duration: 3s;
+  animation-name: movimiento;
+  animation-iteration-count: 1;
+}
 
+@keyframes movimiento {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Seccion Follow Us */
 .follow-us {
   padding: 40px;
@@ -118,6 +135,7 @@ h3 {
 }
 .follow-us .social-button:hover, .follow-us .social-button:focus-within {
   transform: scale(1.05);
+  background-image: radial-gradient(#ff051b 70%, black);
 }
 .follow-us img {
   padding: 5px;
@@ -136,7 +154,7 @@ h3 {
   transition: transform 500ms ease;
 }
 
-.social:hover h3 {
+.social:hover .social-title {
   transform: translateY(30%);
   transition-delay: 10ms;
 }
@@ -145,8 +163,6 @@ h3 {
   padding: 40px;
 }
 .musica-disponible img {
-  height: 100%;
-  width: 100%;
   padding: 10px;
   border-radius: 30px;
   display: block;
@@ -190,10 +206,8 @@ h3 {
   padding: 40px;
 }
 .productos-disponibles img {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
   border-radius: 30px;
+  margin: 10px;
 }
 
 .productos {
@@ -203,6 +217,7 @@ h3 {
   background-color: #ff051b;
   border: solid black;
   padding: 20px;
+  margin: 10px;
 }
 .productos h3 {
   margin: 1rem;

@@ -15,9 +15,7 @@ header {
 }
 
 body {
-  font-family: $font-one;
-  background-image: radial-gradient($main-color 70%, $secondary-color);
-  color: $secondary-color;
+  @include background-colors($main-gradient);
 }
 
 section {
@@ -28,12 +26,7 @@ section {
 }
 
 .seccion-oscura {
-  border-top: solid black 4px;
-  background-image: linear-gradient(
-    $main-color 1%,
-    $tertiary-color 50%,
-    $secondary-color
-  );
+  @include background-colors($secondary-gradient);
 }
 
 h1 {
